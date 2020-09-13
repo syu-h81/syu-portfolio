@@ -1,0 +1,308 @@
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%
+}
+
+.top-wrapper {
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/top-bg2.png);
+  background-color: rgba(2, 2, 2, 1);
+  background-blend-mode: lighten;
+  background-size: cover;
+  color: #fff;
+}
+
+.top-portfolio {
+  padding-top: 12%;
+  display: block;
+  font-size: 2.8em;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+}
+
+.name {
+  font-family: 'Caveat', cursive;
+  margin-top: 2%;
+  font-size: 5.2em;
+}
+
+.name::after {
+  content: 'ハコザキシュウ';
+  display: block;
+  font-family: serif;
+  font-size: 0.4em;
+}
+
+/* header */
+header {
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 10%;
+  padding: 0 2%;
+}
+
+.header-containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-containers a {
+  color: #fff;
+}
+
+.portfolio {
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.toggle {
+  display: none;
+}
+
+.main-nav a {
+  color: #fff;
+}
+
+li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.section-title {
+  font-family: serif;
+  font-size: 2.4em;
+  margin-bottom: 0;
+}
+
+.text-ja {
+  display: inline-block;
+  font-family: serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  border-bottom: 2px solid red;
+  padding: 0 10%;
+  margin-bottom: 6%;
+}
+
+.contact-ja {
+  font-size: 1em;
+  padding: 0 5%;
+}
+
+
+#slideR {
+  display: none;
+}
+
+/* works-wrapper */
+.works-wrapper {
+  padding: 0 4%;
+  margin-bottom: 10%;
+}
+
+.work-contents-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work {
+  width: 30%;
+  height: 100%;
+  text-align: justify;
+  margin-bottom: 4%;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+.work-title {
+  font-family: serif;
+  margin: 0;
+}
+
+article p {
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+
+article a {
+  color: blue;
+}
+
+
+
+/* about-wrapper */
+.about-wrapper {
+  margin-bottom: 10%;
+}
+
+.profile-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img-field {
+  width: 20%;
+  height: 100%;
+  padding-left: 10%;
+}
+
+.profile-img-field img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.text-profile-field {
+  width: 50%;
+  height: auto;
+  text-align: justify;
+  padding-left: 8%;
+}
+
+.text-profile-field h3 {
+  border-bottom: 2px double #000;
+  display: inline-block;
+}
+
+.text-profile-field p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 180%;
+  text-align: justify;
+}
+
+
+
+/* skill-wrapper */
+.skill-wrapper {
+  margin-bottom: 10%;
+  padding: 0 16%;
+}
+
+.skill-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill {
+  width: 40%;
+  height: 100%;
+  text-align: justify;
+  margin-bottom: 4%;
+}
+
+.skill p {
+  text-align: justify;
+  line-height: 150%;
+}
+
+.jquery-img {
+  width: 100%;
+  height: auto;
+}
+
+.jquery-img img {
+  width: 11%;
+  height: auto;
+}
+
+.fa-html5 {
+  color: #d52f25;
+}
+
+.fa-js-square {
+  color: #fff000;
+}
+
+.fa-wordpress {
+  color: #009bc6;
+}
+
+.fa-adobe {
+  color: #de3400;
+}
+
+
+/*contact-wrapper */
+.contact-wrapper {
+  margin-bottom: 10%;
+  padding: 0 18%;
+}
+
+.contact-contents {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact {
+  display: grid;
+}
+
+.contact i {
+  margin-bottom: 6%;
+}
+
+.fa-envelope {
+  color: red;
+}
+
+.fa-instagram {
+  color: #fa8072;
+}
+
+.fa-twitter-square {
+  color: #00aaff;
+}
+
+
+/* footer */
+footer {
+  background-color: #303030;
+  color: #fff;
+  padding-bottom: 6%;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  padding: 4% 0;
+}
+
+.footer-nav li {
+  color: #fff;
+}
+
+.copy-right {
+  letter-spacing: 1px;
+  color: #C2C4C4;
+}
