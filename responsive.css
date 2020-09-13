@@ -1,0 +1,186 @@
+@media (max-width: 500px) {
+
+  /* 共通のスタイルシート */
+  .section-title {
+    font-size: 1.3em;
+  }
+
+  .text-ja {
+    font-size: 0.5em;
+  }
+
+  /* top-wrapperスタイルシート */
+  .top-wrapper {
+    height: 100%;
+    padding-bottom: 8%;
+  }
+
+  .top-portfolio {
+    padding-top: 12%;
+    display: block;
+    font-size: 1.6em;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .name {
+    font-family: 'Caveat', cursive;
+    margin-top: 2%;
+    font-size: 2.4em;
+    margin: 0;
+  }
+
+
+  /* headerスタイルシート */
+  header {
+    margin: 0;
+  }
+
+  .portfolio {
+    font-size: 0.8em;
+  }
+
+  .main-nav a,
+  .bar {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    width: 3.0rem;
+    height: 1.6rem;
+  }
+
+  .menu-toggle span {
+    box-sizing: border-box;
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .5s;
+  }
+
+  .bar1 {
+    top: 0;
+  }
+
+  .bar2 {
+    top: 10px;
+  }
+
+  .bar3 {
+    top: 20px;
+  }
+
+
+  /* responsive-menuスタイルシート */
+  #slideR {
+    z-index:100;
+    cursor: pointer;
+
+    top: 0;
+    right: -00px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background: #999;
+  }
+
+  /*#slideR .slide-inner {
+    overflow: auto;
+    overflow-x: hidden;
+    background: #ddd;
+  }*/
+
+
+  /* works-wrapperスタイルシート */
+  .works-wrapper {
+    background-color: #fffafa;
+    padding: 0;
+  }
+  .work-contents-field {
+    display: block;
+  }
+
+  .work {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6%;
+  }
+
+  .work-title {
+    font-weight: normal;
+  }
+
+  article p {
+    margin: 2% 0;
+  }
+
+
+  /* about-wrapperスタイルシート */
+  .about-wrapper {
+    padding: 0 4%;
+  }
+  .profile-contents {
+    display: block;
+  }
+
+  .profile-img-field {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .profile-img-field img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .text-profile-field {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    padding-left: 0;
+  }
+
+
+  /* skill-wrapper */
+  .skill-wrapper {
+    padding: 0;
+    background-color: #FDF3F2;
+  }
+
+  .skill-contents {
+    display: block;
+  }
+
+  .skill {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 6%;
+  }
+
+  .skill-name {
+    margin: 2% 0;
+  }
+
+  .skill p {
+    text-align: justify;
+    line-height: 150%;
+    padding: 0 4%;
+  }
+
+
+  /* footer */
+  .footer-nav li {
+    font-size: 0.8em;
+    padding: 0 10px;
+  }
+
+  .copy-right {
+    font-size: 0.6em;
+  }
+}
