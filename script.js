@@ -10,6 +10,19 @@ $(function () {
 });
 })
 
+$(function(){
+  $(window).scroll(function (){
+    $(".work").each(function(){
+      var elemPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > elemPos - windowHeight){
+        $(this).addClass('fadeIn');
+      }
+    });
+  });
+});
+
 $(function() {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 80) { //80px以上スクロールしたら上部に固定
