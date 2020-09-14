@@ -9,3 +9,13 @@ $(function () {
   }
 });
 })
+
+$(function() {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 80) { //80px以上スクロールしたら上部に固定
+      $('#page-top').fadeIn();
+    } else {
+      $('#page-top').fadeOut();
+    }
+  });
+});
