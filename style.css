@@ -47,27 +47,53 @@ a {
 
 
 /*アニメーションのCSS*/
-  .top-wrapper,header {
+  .top-wrapper {
     -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
-    animation: fadeIn 2s ease 0s 1 normal;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+  }
+
+  header {
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+    animation: header-fadeIn 2.5s ease 0s 1 normal;
   }
 
   @keyframes fadeIn {
     0% {
-      opacity: 0
+      opacity: 0;
     }
 
     100% {
-      opacity: 1
+      transform: rotateY(360deg);
+      opacity: 1;
     }
   }
 
   @-webkit-keyframes fadeIn {
     0% {
-      opacity: 0
+      opacity: 0;
     }
     100% {
-      opacity: 1
+      opacity: 1;
+    }
+  }
+
+  @keyframes header-fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: rotateY(360deg);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes header-fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 
