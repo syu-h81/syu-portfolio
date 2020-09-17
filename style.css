@@ -116,6 +116,13 @@ header {
   padding: 0 2%;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
 .header-containers {
   display: flex;
   justify-content: space-between;
