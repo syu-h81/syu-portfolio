@@ -17,7 +17,7 @@ a {
 .top-wrapper {
   width: 100%;
   height: 600px;
-  background-image: url(https://syu-h81.github.io/syu-portfolio/top-bg2.png);
+  background-image: url(../images/top-bg2.png);
   background-color: rgba(2, 2, 2, 1);
   background-blend-mode: lighten;
   background-size: cover;
@@ -44,7 +44,6 @@ a {
   font-family: serif;
   font-size: 0.4em;
 }
-
 
 /*アニメーションのCSS*/
   .top-wrapper {
@@ -108,8 +107,9 @@ a {
     transform: translateY(0);
   }
 
+
 /* header */
-header {
+.header {
   background-color: #000;
   color: #fff;
   margin-bottom: 10%;
@@ -184,7 +184,7 @@ li {
 }
 
 
-#slideR {
+#slideL {
   display: none;
 }
 
@@ -378,16 +378,16 @@ footer {
 }
 
 #page-top {
-display: none;
-  position: fixed;
-  z-index: 99999;
-  bottom: 20px;
-  right: 0;
-  padding: 5px 15px;
-  background-color: #ddd;
-  border-radius: 50%;
-}
+  display: none;
+    position: fixed;
+    z-index: 99999;
+    bottom: 20px;
+    right: 0;
+    padding: 5px 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+  }
 
-.fa-angle-up {
-  color: #fff;
-}
+  .fa-angle-up {
+    color: #fff;
+  }
