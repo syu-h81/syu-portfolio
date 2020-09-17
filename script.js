@@ -1,15 +1,35 @@
-$(function () {
-  $('#toggle').on('click',function(){
-  if($('#slideR').hasClass('off')){
-    $('#slideR').removeClass('off');
-    $(this).animate({'marginLeft':'400px'},300).addClass('on');
-  }else{
-    $('#slideL').addClass('off');
-    $(this).animate({'marginLeft':'0px'},300);
+
+
+//ヘッダー上部固定
+var header_window = $(window),
+    _header = $('.header'),
+    top_height;
+
+header_window.scroll(function(){
+  top_height = $('.top-wrapper').height();
+  if(header_window.scrollTop() > top_height){
+    _header.addClass('fixed');
+  }
+  else{
+    _header.removeClass('fixed');
   }
 });
-})
 
+
+//メニューバーの処理
+$(function () {
+  $('#toggle').on('click', function() {
+    $('#toggle').toggleClass('show');
+    if($('.responsive-menu-wrapper').hasClass('slideL-fadein')) {
+      $('.responsive-menu-wrapper').removeClass('slideL-fadein');
+    }else {
+      $('.responsive-menu-wrapper').addClass('slideL-fadein');
+    }
+  });
+});
+
+
+//worksのスクロールフェードイン処理
 $(function(){
   $(window).scroll(function (){
     $(".work").each(function(){
@@ -23,6 +43,8 @@ $(function(){
   });
 });
 
+
+//トップ移動のマーク
 $(function() {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 80) { //80px以上スクロールしたら上部に固定
@@ -32,3 +54,4 @@ $(function() {
     }
   });
 });
+
