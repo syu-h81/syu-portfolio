@@ -13,6 +13,7 @@
   .top-wrapper {
     height: 100%;
     padding-bottom: 8%;
+    position: relative;
   }
 
   .top-portfolio {
@@ -73,18 +74,57 @@
     top: 20px;
   }
 
+  .menu-toggle.show .bar1 {
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  .menu-toggle.show .bar2 {
+    opacity: 0;
+  }
+
+  .menu-toggle.show .bar3 {
+    transform: translateY(-10px) rotate(45deg);
+  }
+
 
   /* responsive-menuスタイルシート */
-  #slideR {
-    z-index:100;
+  #slideL {
+    z-index: 100;
     cursor: pointer;
-
+    position: fixed;
     top: 0;
-    right: -00px;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    background: #999;
+    width: 80%;
+    height: 100%;
+    padding-top: 40px;
+    background: #000;
+    display: block;
+  }
+
+  .responsive-menu-wrapper {
+    transform:translateX(-300px);
+    opacity:0;
+    transition : all 1s;
+  }
+
+  .slideL-fadein {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+
+  .toggle-responsive-menu {
+    text-align: right;
+  }
+
+  .toggle-responsive-menu .bar1 {
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  .toggle-responsive-menu .bar2 {
+    opacity: 0;
+  }
+
+  .toggle-responsive-menu .bar3 {
+    transform: translateY(-10px) rotate(45deg);
   }
 
   /*#slideR .slide-inner {
@@ -92,6 +132,11 @@
     overflow-x: hidden;
     background: #ddd;
   }*/
+
+  .responsive-menu li {
+    padding: 3% 0;
+      color: #fff;
+  }
 
 
   /* works-wrapperスタイルシート */
