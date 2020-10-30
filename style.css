@@ -118,6 +118,7 @@ a {
 .fixed {
   position: fixed;
   top: 0;
+  margin-bottom: 10%;
   z-index: 100;
   width: 100%;
   opacity: 0.8;
