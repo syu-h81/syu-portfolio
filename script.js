@@ -2,6 +2,7 @@
 
 //ヘッダー上部固定
 var header_window = $(window),
+header_height = $('header').height(),
     _header = $('.header'),
     top_height;
 
@@ -9,12 +10,12 @@ header_window.scroll(function(){
   top_height = $('.top-wrapper').height();
   if(header_window.scrollTop() > top_height){
     _header.addClass('fixed');
+    header_height = $('#works, #about, #skill, #contact, footer').css('margin-top', header_height + 60);
   }
   else{
     _header.removeClass('fixed');
   }
 });
-
 
 //メニューバーの処理
 $(function () {
