@@ -10,7 +10,7 @@ header_window.scroll(function(){
   top_height = $('.top-wrapper').height();
   if(header_window.scrollTop() > top_height){
     _header.addClass('fixed');
-    header_height = $('#works, #about, #skill, #contact, footer').css('margin-top', header_height + 0);
+    header_height = $('#works, #about, #skill, #contact, footer').css('margin-top', header_height + 90);
   }
   else{
     _header.removeClass('fixed');
