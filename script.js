@@ -12,9 +12,8 @@ header_window.scroll(function(){
     _header.addClass('fixed');
     header_height = $('#works').css('margin-top', header_height + 90);
   }
-  else if(header_widnow.scrollTop() < top_height){
+  else{
     _header.removeClass('fixed');
-    header_height = $('#works, #about, #skill, #contact, footer').css('margin-top', header_height - 90);
   }
 });
 
