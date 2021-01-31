@@ -141,8 +141,9 @@
 
   /* works-wrapperスタイルシート */
   .works-wrapper {
-    background-color: #fffafa;
     padding: 0;
+    margin: 0 24px;
+    font-size: 12px;
   }
   .work-contents-field {
     display: block;
