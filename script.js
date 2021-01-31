@@ -1,7 +1,7 @@
 
 
 //ヘッダー上部固定
-var header_window = $('window'),
+var header_window = $(window),
 header_height = $('header').height(),
     _header = $('.header'),
     top_height;
