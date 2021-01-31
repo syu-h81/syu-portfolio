@@ -1,7 +1,7 @@
 
 
 //ヘッダー上部固定
-var header_window = $(window),
+var header_window = $('window'),
 header_height = $('header').height(),
     _header = $('.header'),
     top_height;
@@ -10,10 +10,11 @@ header_window.scroll(function(){
   top_height = $('.top-wrapper').height();
   if(header_window.scrollTop() > top_height){
     _header.addClass('fixed');
-    header_height = $('#works, #about, #skill, #contact, footer').css('margin-top', header_height + 90);
+    header_height = $('#works').css('margin-top', header_height + 90);
   }
-  else{
+  else if(header_widnow.scrollTop() < top_height){
     _header.removeClass('fixed');
+    header_height = $('#works, #about, #skill, #contact, footer').css('margin-top', header_height - 90);
   }
 });
 
