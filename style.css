@@ -39,7 +39,7 @@ a {
 }
 
 .name::after {
-  content: 'ハコザキシュウ';
+  content: 'ダンジョウシュウ';
   display: block;
   font-family: serif;
   font-size: 0.4em;
